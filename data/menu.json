@@ -1,0 +1,72 @@
+{
+  "_uitleg": "VOORBEELDMENU. Alle items met bevestigd:false zijn voorbeelden (ook de prijzen). Zet bevestigd op true en vul de echte prijs in zodra de eigenaar het goedkeurt. Draai daarna: npm run build:productie",
+  "categorieen": [
+    {
+      "id": "frites", "naam": "Frites", "illustratie": "frites",
+      "items": [
+        { "naam": "Frites klein", "omschrijving": "Een kleine portie met zout", "prijs": 2.8, "bevestigd": false },
+        { "naam": "Frites middel", "omschrijving": "De gewone portie", "prijs": 3.4, "bevestigd": false },
+        { "naam": "Frites groot", "omschrijving": "Voor de echte liefhebber", "prijs": 4.0, "bevestigd": false },
+        { "naam": "Frites speciaal", "omschrijving": "Met mayonaise, ketchup en ui", "prijs": 4.5, "bevestigd": false },
+        { "naam": "Frites oorlog", "omschrijving": "Met mayonaise, pindasaus en ui", "prijs": 4.6, "bevestigd": false }
+      ]
+    },
+    {
+      "id": "hamburgers", "naam": "Hamburgers", "illustratie": "hamburger",
+      "items": [
+        { "naam": "Hamburger", "omschrijving": "Met sla, tomaat en saus", "prijs": 4.2, "bevestigd": false },
+        { "naam": "Cheeseburger", "omschrijving": "Met kaas, sla en saus", "prijs": 4.7, "bevestigd": false },
+        { "naam": "Kipburger", "omschrijving": "Kipfilet met sla en saus", "prijs": 4.9, "bevestigd": false },
+        { "naam": "Dubbele hamburger", "omschrijving": "Twee burgers, kaas en saus", "prijs": 6.2, "bevestigd": false }
+      ]
+    },
+    {
+      "id": "snacks", "naam": "Snacks", "illustratie": "snack",
+      "items": [
+        { "naam": "Frikandel", "omschrijving": "", "prijs": 2.6, "bevestigd": false },
+        { "naam": "Kroket", "omschrijving": "", "prijs": 2.7, "bevestigd": false },
+        { "naam": "Bamischijf", "omschrijving": "", "prijs": 2.7, "bevestigd": false },
+        { "naam": "Gehaktbal", "omschrijving": "", "prijs": 3.0, "bevestigd": false },
+        { "naam": "Kipnuggets", "omschrijving": "Zes stuks", "prijs": 4.5, "bevestigd": false },
+        { "naam": "Bitterballen", "omschrijving": "Zes stuks", "prijs": 4.8, "bevestigd": false }
+      ]
+    },
+    {
+      "id": "vegetarisch", "naam": "Vegetarisch", "illustratie": "blad",
+      "items": [
+        { "naam": "Kaassoufflé", "omschrijving": "", "prijs": 2.8, "bevestigd": false },
+        { "naam": "Groentekroket", "omschrijving": "", "prijs": 2.8, "bevestigd": false },
+        { "naam": "Vegaburger", "omschrijving": "Met sla, tomaat en saus", "prijs": 5.2, "bevestigd": false }
+      ]
+    },
+    {
+      "id": "ijs", "naam": "IJs", "illustratie": "ijs",
+      "items": [
+        { "naam": "Softijs", "omschrijving": "In een hoorntje of bakje", "prijs": 2.5, "bevestigd": false },
+        { "naam": "Bolletje ijs", "omschrijving": "Per bolletje", "prijs": 1.5, "bevestigd": false },
+        { "naam": "Kinderijsje", "omschrijving": "Klein softijsje", "prijs": 1.8, "bevestigd": false },
+        { "naam": "Ijscoupe", "omschrijving": "Met slagroom", "prijs": 4.5, "bevestigd": false }
+      ]
+    },
+    {
+      "id": "dranken", "naam": "Dranken", "illustratie": "beker",
+      "items": [
+        { "naam": "Frisdrank", "omschrijving": "Blikje", "prijs": 2.2, "bevestigd": false },
+        { "naam": "Water", "omschrijving": "", "prijs": 1.8, "bevestigd": false },
+        { "naam": "Koffie", "omschrijving": "", "prijs": 2.2, "bevestigd": false },
+        { "naam": "Chocolademelk", "omschrijving": "", "prijs": 2.5, "bevestigd": false },
+        { "naam": "Milkshake", "omschrijving": "", "prijs": 3.8, "bevestigd": false }
+      ]
+    },
+    {
+      "id": "sauzen", "naam": "Sauzen", "illustratie": "saus",
+      "items": [
+        { "naam": "Mayonaise", "omschrijving": "", "prijs": 0.6, "bevestigd": false },
+        { "naam": "Ketchup", "omschrijving": "", "prijs": 0.6, "bevestigd": false },
+        { "naam": "Pindasaus", "omschrijving": "", "prijs": 0.7, "bevestigd": false },
+        { "naam": "Currysaus", "omschrijving": "", "prijs": 0.6, "bevestigd": false },
+        { "naam": "Knoflooksaus", "omschrijving": "", "prijs": 0.7, "bevestigd": false }
+      ]
+    }
+  ]
+}

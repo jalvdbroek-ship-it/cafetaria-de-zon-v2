@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{meta.title}}</title>
+  <meta name="description" content="{{meta.description}}">
+  <meta name="theme-color" content="#F7B500">
+  {{@robots}}
+  <link rel="canonical" href="{{meta.canonical}}">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:site_name" content="{{site.name}}">
+  <meta property="og:title" content="{{meta.title}}">
+  <meta property="og:description" content="{{meta.description}}">
+  <meta property="og:url" content="{{meta.canonical}}">
+  <meta property="og:image" content="{{site.siteUrl}}/assets/img/og.png">
+  <meta property="og:image:alt" content="Cafetaria De Zon, Noordeinde 12, Zwartewaal">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="{{root}}assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="{{root}}assets/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="{{root}}assets/css/style.css">
+  <script>document.documentElement.classList.add("js")</script>
+  {{@jsonld}}
+</head>
+<body data-page="{{meta.page}}">
+  {{@sprite}}
+  <a class="skip" href="#main">Naar de inhoud</a>
+  <header class="site-header">
+    <div class="rail header-row">
+      <a class="brand" href="{{root}}" aria-label="Cafetaria De Zon, naar de voorpagina">
+        <svg class="brand-sun" aria-hidden="true"><use href="#ill-zon"/></svg>
+        <span>De Zon</span>
+      </a>
+      <nav id="nav" class="nav" aria-label="Hoofdmenu">{{@nav}}</nav>
+      <a class="btn btn-small header-call" href="tel:{{site.phone}}"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span>{{site.phoneDisplay}}</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">
+        <svg class="icon icon-open" aria-hidden="true"><use href="#i-menu"/></svg>
+        <svg class="icon icon-close" aria-hidden="true"><use href="#i-x"/></svg>
+        <span class="sr-only">Menu</span>
+      </button>
+    </div>
+  </header>

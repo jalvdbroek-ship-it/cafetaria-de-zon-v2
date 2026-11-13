@@ -1,0 +1,14 @@
+{
+  "_uitleg": "Alle foto's zijn nu voorbeeldfoto's (Pexels, zie ASSETS-EN-LICENTIES.md). Vervang het bestand in assets/img/foto en zet voorbeeld op false: dan verdwijnt het label.",
+  "frites": { "alt": "Frites met ketchup in een bakje", "voorbeeld": true },
+  "hamburgers": { "alt": "Hamburger met kaas, sla en tomaat", "voorbeeld": true },
+  "snacks": { "alt": "Gefrituurde snacks met frites op tafel", "voorbeeld": true },
+  "vegetarisch": { "alt": "Vegetarische burger met rode kool", "voorbeeld": true },
+  "ijs": { "alt": "Softijs in een hoorntje", "voorbeeld": true },
+  "dranken": { "alt": "Milkshake in een beker met rietje", "voorbeeld": true },
+  "sauzen": { "alt": "Tien kleine bakjes met verschillende sauzen", "voorbeeld": true },
+  "interieur": { "alt": "Afhaalbalie van een snackbar", "voorbeeld": true },
+  "sfeer": { "alt": "Burger met bacon en kaas op een houten plank", "voorbeeld": true },
+  "afhalen": { "alt": "Frites in een papieren afhaalzak", "voorbeeld": true },
+  "band": { "alt": "Een bak met gouden gefrituurde snacks", "voorbeeld": true }
+}

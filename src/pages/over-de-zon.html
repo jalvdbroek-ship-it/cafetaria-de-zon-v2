@@ -1,0 +1,37 @@
+<!--meta {"page":"about","path":"/over-de-zon/","title":"Over Cafetaria De Zon | Zwartewaal","description":"Cafetaria De Zon zit aan het Noordeinde 12 in Zwartewaal. Frites, hamburgers, snacks, vegetarisch, ijs en dranken. Afhalen, pinnen of contant."} -->
+{{> head}}
+  <main id="main">
+    <section class="page-head">
+      <div class="rail">
+        <h1>Over Cafetaria De Zon</h1>
+        <p class="lead">Een cafetaria aan het Noordeinde in Zwartewaal.</p>
+      </div>
+    </section>
+    <section class="rail prose-grid" aria-labelledby="wat-t">
+      <h2 id="wat-t">Wat je bij ons haalt</h2>
+      <div class="prose">
+        <p>Frites, hamburgers en snacks. Voor wie geen vlees eet is er vegetarisch. Als toetje is er ijs, en er zijn dranken.</p>
+        <p>Afhalen kan. Betalen kan met pin of contant. We zijn dinsdag tot en met zondag open vanaf 12:30 uur.</p>
+        <p><a class="link" href="{{root}}menukaart/">Bekijk de menukaart</a></p>
+      </div>
+    </section>
+    <div class="rail afhaal-foto">{{@photo snacks par cls=wide-photo}}</div>
+    <section class="rail prose-grid" aria-labelledby="waar-t">
+      <h2 id="waar-t">Waar je ons vindt</h2>
+      <div class="prose">
+        <address><p class="addr">{{site.street}}<br>{{site.postal}} {{site.city}}</p></address>
+        <p><a class="link" href="{{site.routeUrl}}" rel="noopener">Route plannen</a></p>
+      </div>
+    </section>
+    <section class="contact" aria-labelledby="contact-t">
+      <div class="rail contact-grid">
+        <h2 id="contact-t">Vragen? Bel of mail.</h2>
+        <address>
+          <p><a class="big-link" href="tel:{{site.phone}}">{{site.phoneDisplay}}</a></p>
+          <p><a class="link" href="mailto:{{site.email}}">{{site.email}}</a></p>
+        </address>
+        <div class="actions"><a class="btn" href="{{root}}contact/">Alle contactgegevens</a></div>
+      </div>
+    </section>
+  </main>
+{{> foot}}

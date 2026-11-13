@@ -1,0 +1,32 @@
+{
+  "name": "Cafetaria De Zon",
+  "short": "De Zon",
+  "siteUrl": "https://jalvdbroek-ship-it.github.io/cafetaria-de-zon-v2",
+  "preview": true,
+  "phone": "+31181663669",
+  "phoneDisplay": "0181 66 36 69",
+  "email": "cdezon146@gmail.com",
+  "street": "Noordeinde 12",
+  "postal": "3238 BG",
+  "city": "Zwartewaal",
+  "geo": { "lat": 51.8834283, "lng": 4.2249807 },
+  "routeUrl": "https://www.google.com/maps/dir/?api=1&destination=Noordeinde+12%2C+3238+BG+Zwartewaal",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Noordeinde+12%2C+3238+BG+Zwartewaal",
+  "payment": ["Contant", "Pin"],
+  "cuisine": ["Nederlands", "Frites", "Hamburgers", "Snacks", "Vegetarisch", "IJs"],
+  "hours": {
+    "0": ["12:30", "21:00"],
+    "1": null,
+    "2": ["12:30", "22:00"],
+    "3": ["12:30", "22:00"],
+    "4": ["12:30", "22:00"],
+    "5": ["12:30", "23:00"],
+    "6": ["12:30", "23:00"]
+  },
+  "nav": [
+    { "page": "menu", "label": "Menukaart", "href": "menukaart/" },
+    { "page": "order", "label": "Afhalen", "href": "bestellen/" },
+    { "page": "about", "label": "Over De Zon", "href": "over-de-zon/" },
+    { "page": "contact", "label": "Contact", "href": "contact/" }
+  ]
+}

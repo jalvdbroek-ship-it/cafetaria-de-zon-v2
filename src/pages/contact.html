@@ -1,0 +1,29 @@
+<!--meta {"page":"contact","path":"/contact/","title":"Contact en route | Cafetaria De Zon Zwartewaal","description":"Contact met Cafetaria De Zon: Noordeinde 12, 3238 BG Zwartewaal. Bel 0181 66 36 69, mail of plan je route. Openingstijden dinsdag tot en met zondag."} -->
+{{> head}}
+  <main id="main">
+    <section class="page-head">
+      <div class="rail">
+        <h1>Contact en route</h1>
+      </div>
+    </section>
+    <section class="rail contact-page" aria-labelledby="gegevens-t">
+      <div>
+        <h2 id="gegevens-t">Gegevens</h2>
+        <address class="contact-list">
+          <p class="addr">{{site.name}}<br>{{site.street}}<br>{{site.postal}} {{site.city}}</p>
+          <p><a class="big-link" href="tel:{{site.phone}}"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>{{site.phoneDisplay}}</a></p>
+          <p><a class="link" href="mailto:{{site.email}}"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>{{site.email}}</a></p>
+        </address>
+        <div class="actions">
+          <a class="btn" href="{{site.routeUrl}}" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-navigation"/></svg>Route plannen</a>
+          <a class="btn btn-ghost" href="{{site.mapsUrl}}" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-map-pin"/></svg>Bekijk op Google Maps</a>
+        </div>
+      </div>
+      <div class="hours-card">
+        <h2>Openingstijden</h2>
+        <p class="dial-status contact-status"><span class="dial-state" id="status-state">Dinsdag tot en met zondag open</span><span class="dial-detail" id="status-detail">Vanaf 12:30 uur</span></p>
+        {{@hours-table}}
+      </div>
+    </section>
+  </main>
+{{> foot}}

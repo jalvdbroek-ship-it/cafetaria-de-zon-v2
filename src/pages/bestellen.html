@@ -1,0 +1,29 @@
+<!--meta {"page":"order","path":"/bestellen/","title":"Eten afhalen in Zwartewaal | Cafetaria De Zon","description":"Eten afhalen in Zwartewaal bij Cafetaria De Zon, Noordeinde 12. Bekijk de kaart, bel 0181 66 36 69 en haal af. Pinnen of contant betalen."} -->
+{{> head}}
+  <main id="main">
+    <section class="page-head">
+      <div class="rail">
+        <h1>Eten afhalen in Zwartewaal</h1>
+        <p class="lead">Online bestellen is er nu niet. Afhalen kan wel: kies van de kaart en bel.</p>
+      </div>
+    </section>
+    <div class="rail afhaal-foto">{{@photo afhalen par cls=wide-photo}}</div>
+    <section class="rail steps-wrap" aria-labelledby="steps-t">
+      <h2 id="steps-t" class="sr-only">In drie stappen afhalen</h2>
+      <ol class="steps">
+        <li><h3>Kies van de kaart</h3><p><a class="link" href="{{root}}menukaart/">Naar de menukaart</a></p></li>
+        <li><h3>Bel ons</h3><p><a class="big-link" href="tel:{{site.phone}}">{{site.phoneDisplay}}</a></p></li>
+        <li><h3>Haal je bestelling op</h3><p>Aan het {{site.street}}. Pinnen of contant betalen.</p></li>
+      </ol>
+    </section>
+    <section class="avond" aria-labelledby="tijden-t">
+      <div class="rail avond-grid">
+        <div><h2 id="tijden-t">Wanneer kun je bellen</h2>{{@hours-table}}</div>
+        <div class="facts"><h2>Liever langskomen?</h2><ul>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-map-pin"/></svg><span>{{site.street}}, {{site.postal}} {{site.city}}</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-navigation"/></svg><span><a class="link" href="{{site.routeUrl}}" rel="noopener">Route plannen</a></span></li>
+        </ul></div>
+      </div>
+    </section>
+  </main>
+{{> foot}}

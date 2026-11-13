@@ -1,0 +1,100 @@
+<!--meta {"page":"home","path":"/","title":"Cafetaria De Zon Zwartewaal | Frites, snacks en burgers afhalen","description":"Cafetaria De Zon aan het Noordeinde 12 in Zwartewaal. Frites, hamburgers, snacks, vegetarisch en ijs. Afhalen kan, pinnen of contant. Dinsdag t/m zondag open."} -->
+{{> head}}
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-t">
+      <div class="rail hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-t"><span class="line"><span>Cafetaria</span></span> <span class="line"><span>De Zon</span></span></h1>
+          <p class="lead">Frites, hamburgers, snacks, vegetarisch en ijs aan het Noordeinde in Zwartewaal. Afhalen kan, pinnen of contant.</p>
+          <div class="actions">
+            <a class="btn" href="{{root}}menukaart/">Bekijk de kaart</a>
+            <a class="btn btn-ghost" href="tel:{{site.phone}}"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Bel {{site.phoneDisplay}}</a>
+          </div>
+          <p class="where"><svg class="icon" aria-hidden="true"><use href="#i-map-pin"/></svg><a class="link" href="{{site.routeUrl}}" rel="noopener">{{site.street}}, {{site.city}}</a></p>
+        </div>
+
+        <div class="dial" id="dial" data-state="unknown">
+          <p class="dial-status">
+            <span class="dial-state" id="status-state">Dinsdag tot en met zondag open</span>
+            <span class="dial-detail" id="status-detail">Vanaf 12:30 uur</span>
+          </p>
+          <svg class="dial-svg" viewBox="0 0 400 250" aria-hidden="true" focusable="false">
+            <defs><clipPath id="sky"><rect x="0" y="0" width="400" height="200"/></clipPath></defs>
+            <path class="dial-arc" d="M30 200A170 170 0 0 1 370 200"/>
+            <g clip-path="url(#sky)">
+              <g class="dial-sun" id="dial-sun">
+                <circle r="22"/>
+                <path d="M0-32v-8M0 32v8M-32 0h-8M32 0h8M-23-23l-6-6M23 23l6 6M-23 23l-6 6M23-23l6-6"/>
+              </g>
+            </g>
+            <line class="dial-horizon" x1="10" y1="200" x2="390" y2="200"/>
+            <circle class="dial-end" cx="30" cy="200" r="6"/>
+            <circle class="dial-end" cx="370" cy="200" r="6"/>
+            <text class="dial-time" id="dial-open" x="30" y="234" text-anchor="start"></text>
+            <text class="dial-time" id="dial-close" x="370" y="234" text-anchor="end"></text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Frites</span><svg class="ticker-sun"><use href="#ill-zon"/></svg><span>Hamburgers</span><svg class="ticker-sun"><use href="#ill-zon"/></svg><span>Snacks</span><svg class="ticker-sun"><use href="#ill-zon"/></svg><span>Vegetarisch</span><svg class="ticker-sun"><use href="#ill-zon"/></svg><span>IJs</span><svg class="ticker-sun"><use href="#ill-zon"/></svg><span>Dranken</span><svg class="ticker-sun"><use href="#ill-zon"/></svg>
+        <span>Frites</span><svg class="ticker-sun"><use href="#ill-zon"/></svg><span>Hamburgers</span><svg class="ticker-sun"><use href="#ill-zon"/></svg><span>Snacks</span><svg class="ticker-sun"><use href="#ill-zon"/></svg><span>Vegetarisch</span><svg class="ticker-sun"><use href="#ill-zon"/></svg><span>IJs</span><svg class="ticker-sun"><use href="#ill-zon"/></svg><span>Dranken</span><svg class="ticker-sun"><use href="#ill-zon"/></svg>
+      </div>
+    </div>
+
+    <section class="kaart" aria-labelledby="kaart-t">
+      <div class="rail">
+        <h2 id="kaart-t">Op de kaart</h2>
+        <ul class="tiles">{{@tiles}}</ul>
+        <a class="bar" href="{{root}}menukaart/"><span>Bekijk de hele kaart</span><svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+      </div>
+    </section>
+
+    <div class="band">{{@photo band par cls=band-photo}}</div>
+
+    <section class="over" aria-labelledby="over-t">
+      <div class="rail over-grid">
+        <div class="over-body">
+          <h2 id="over-t">Aan het Noordeinde in Zwartewaal</h2>
+          <p>Cafetaria De Zon zit aan het Noordeinde 12. Kom langs voor frites, hamburgers en snacks, of bel om af te halen. Pinnen kan, contant ook.</p>
+          <p><a class="link" href="{{root}}over-de-zon/">Meer over De Zon</a></p>
+        </div>
+        <div class="collage">{{@photo interieur par cls=collage-a}}{{@photo sfeer par cls=collage-b}}</div>
+      </div>
+    </section>
+
+    <section class="avond" id="tijden" aria-labelledby="tijden-t">
+      <div class="rail avond-grid">
+        <div>
+          <h2 id="tijden-t">Openingstijden</h2>
+          {{@hours-table}}
+        </div>
+        <div class="facts">
+          <h2 id="facts-t">Afhalen en betalen</h2>
+          <ul>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-shopping-bag"/></svg><span><strong>Afhalen</strong> aan het Noordeinde 12</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-credit-card"/></svg><span><strong>Pinnen</strong> met je bankpas</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-banknote"/></svg><span><strong>Contant</strong> kan ook</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" aria-labelledby="contact-t">
+      <div class="rail contact-grid">
+        <h2 id="contact-t">Kom langs of bel</h2>
+        <address>
+          <p class="addr">{{site.street}}<br>{{site.postal}} {{site.city}}</p>
+          <p><a class="big-link" href="tel:{{site.phone}}">{{site.phoneDisplay}}</a></p>
+          <p><a class="link" href="mailto:{{site.email}}">{{site.email}}</a></p>
+        </address>
+        <div class="actions">
+          <a class="btn" href="{{site.routeUrl}}" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-navigation"/></svg>Route plannen</a>
+          <a class="btn btn-ghost" href="tel:{{site.phone}}"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Bel nu</a>
+        </div>
+      </div>
+    </section>
+  </main>
+{{> foot}}

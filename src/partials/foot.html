@@ -1,0 +1,32 @@
+  <footer class="site-footer">
+    <div class="rail footer-grid">
+      <div>
+        <p class="footer-brand"><svg class="brand-sun" aria-hidden="true"><use href="#ill-zon"/></svg> {{site.name}}</p>
+        <address>{{site.street}}<br>{{site.postal}} {{site.city}}</address>
+      </div>
+      <ul class="footer-contact">
+        <li><a href="tel:{{site.phone}}">{{site.phoneDisplay}}</a></li>
+        <li><a href="mailto:{{site.email}}">{{site.email}}</a></li>
+        <li><a href="{{site.routeUrl}}" rel="noopener">Route plannen</a></li>
+      </ul>
+      <ul class="footer-links">
+        <li><a href="{{root}}menukaart/">Menukaart</a></li>
+        <li><a href="{{root}}bestellen/">Afhalen</a></li>
+        <li><a href="{{root}}over-de-zon/">Over De Zon</a></li>
+        <li><a href="{{root}}contact/">Contact</a></li>
+        <li><a href="{{root}}privacy/">Privacy</a></li>
+      </ul>
+    </div>
+    {{@foto-note}}
+  </footer>
+
+  <div class="dock" role="navigation" aria-label="Snel naar">
+    <a href="{{root}}menukaart/"><svg class="icon" aria-hidden="true"><use href="#i-utensils"/></svg><span>Kaart</span></a>
+    <a class="dock-call" href="tel:{{site.phone}}"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span>Bel</span></a>
+    <a href="{{site.routeUrl}}" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-navigation"/></svg><span>Route</span></a>
+  </div>
+
+  {{@hours-json}}
+  <script src="{{root}}assets/js/main.js" defer></script>
+</body>
+</html>

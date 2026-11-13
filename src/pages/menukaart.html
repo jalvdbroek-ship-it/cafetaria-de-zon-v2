@@ -1,0 +1,28 @@
+<!--meta {"page":"menu","path":"/menukaart/","title":"Menukaart | Cafetaria De Zon Zwartewaal","description":"De menukaart van Cafetaria De Zon in Zwartewaal: frites, hamburgers, snacks, vegetarisch, ijs en dranken. Afhalen aan het Noordeinde 12."} -->
+{{> head}}
+  <main id="main">
+    <section class="page-head">
+      <div class="rail">
+        <h1>Menukaart</h1>
+        {{@menu-notice}}
+      </div>
+    </section>
+    <div class="rail menu-layout">
+      {{@menu-nav}}
+      <div class="cats">{{@menu}}</div>
+    </div>
+    <section class="contact" aria-labelledby="contact-t">
+      <div class="rail contact-grid">
+        <h2 id="contact-t">Afhalen? Bel even.</h2>
+        <address>
+          <p><a class="big-link" href="tel:{{site.phone}}">{{site.phoneDisplay}}</a></p>
+          <p class="addr">{{site.street}}, {{site.city}}</p>
+        </address>
+        <div class="actions">
+          <a class="btn" href="tel:{{site.phone}}"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Bel nu</a>
+          <a class="btn btn-ghost" href="{{root}}bestellen/">Zo werkt afhalen</a>
+        </div>
+      </div>
+    </section>
+  </main>
+{{> foot}}
