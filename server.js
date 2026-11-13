@@ -10,7 +10,7 @@ const hidden = ["src", "data", "tools", ".icons", "node_modules", ".gg"];
 const types = {
   ".html": "text/html; charset=utf-8", ".css": "text/css; charset=utf-8", ".js": "text/javascript; charset=utf-8",
   ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg", ".webp": "image/webp", ".avif": "image/avif",
-  ".woff2": "font/woff2", ".xml": "application/xml", ".txt": "text/plain; charset=utf-8", ".json": "application/json",
+  ".woff2": "font/woff2", ".mp4": "video/mp4", ".pdf": "application/pdf", ".md": "text/plain; charset=utf-8", ".csv": "text/csv; charset=utf-8", ".xml": "application/xml", ".txt": "text/plain; charset=utf-8", ".json": "application/json",
 };
 
 createServer(async (req, res) => {
