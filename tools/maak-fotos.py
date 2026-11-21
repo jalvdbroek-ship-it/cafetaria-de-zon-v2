@@ -12,7 +12,7 @@ SLOTS = {
     "snacks": ("1105752", None),
     "vegetarisch": ("3607284", None),
     "ijs": ("1294943", None),
-    "dranken": ("7761651", (0, 0.2, 1, 0.867)),
+    "dranken": ("16404143", (0, 0.11, 1, 0.91)),
     "sauzen": ("3622479", None),
     "interieur": ("29179403", None),
     "sfeer": ("18713424", None),
