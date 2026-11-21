@@ -71,6 +71,7 @@ table { border-collapse: collapse; }
 /* Links en knoppen */
 .link { display: inline-block; padding-block: 0.25rem; font-weight: 600; text-underline-offset: 0.22em; text-decoration-thickness: 2px; }
 .link:hover { color: var(--ember); }
+.nw { white-space: nowrap; }
 .big-link {
   display: inline-flex; align-items: center; gap: 0.6rem;
   font-size: clamp(2rem, 5.5vw, 3rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.1;
@@ -179,7 +180,7 @@ table { border-collapse: collapse; }
 .tile-wide { grid-column: span 2; }
 .tile-wide a { flex-direction: row; align-items: center; min-height: 0; }
 .tile-wide a.has-photo { min-height: 11rem; align-items: flex-end; }
-.tile-wide a.has-photo .ph img { object-position: 50% 22%; }
+.tile-wide a.has-photo .ph img { object-position: 50% 58%; }
 .tile-wide .tile-art .ill, .tile-wide .tile-art img { width: 4rem; height: 4rem; }
 .bar {
   display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 0.75rem;

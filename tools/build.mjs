@@ -196,7 +196,8 @@ for (const file of readdirSync(join(root, "src/pages")).filter((f) => f.endsWith
   const ctx = {
     site,
     meta: { ...meta, canonical: `${site.siteUrl}${meta.path === "/404" ? "/" : meta.path}` },
-    root: depth ? "../" : ""
+    // De 404-pagina wordt voor elk onbekend pad getoond, dus daar moeten alle verwijzingen absoluut zijn
+    root: meta.path === "/404" ? `${site.siteUrl}/` : depth ? "../" : ""
   };
   const html = render(src, ctx);
   const outPath = meta.path === "/" ? "index.html" : meta.path === "/404" ? "404.html" : join(meta.path.slice(1), "index.html");
