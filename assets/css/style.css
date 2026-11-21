@@ -368,18 +368,7 @@ table { border-collapse: collapse; }
 .dial[data-state="closed"] .dial-sleep { display: block; }
 .nf-zon { width: clamp(5rem, 14vw, 8rem); height: auto; aspect-ratio: 260 / 280; margin-bottom: 0.75rem; }
 
-/* Zonnewijzer met de bende: de Zon schommelt mee, de anderen springen om de beurt en gaan slapen als het gesloten is */
+/* Zonnewijzer met de bende: de Zon schommelt rustig mee */
 .sun-wob { transform-box: fill-box; transform-origin: 50% 50%; animation: wob 3.2s ease-in-out infinite; }
 @keyframes wob { 0%, 100% { transform: rotate(-7deg); } 50% { transform: rotate(7deg); } }
-.dial-cast .cs { transition: transform 0.9s var(--ease); transition-delay: calc(var(--i) * 0.12s); animation: rise 0.9s var(--ease) backwards; animation-delay: calc(1s + var(--i) * 0.16s); }
-.dial[data-state="closed"] .dial-cast .cs { transform: translateY(95px); }
-@keyframes rise { from { transform: translateY(95px); } }
-.hop { transform-box: fill-box; transform-origin: 50% 100%; animation: hop var(--t, 2.8s) ease-in-out var(--d, 0s) infinite; }
-@keyframes hop {
-  0%, 52%, 100% { transform: translateY(0) scale(1, 1); }
-  58% { transform: translateY(0) scale(1.07, 0.9); }
-  70% { transform: translateY(-11px) scale(0.96, 1.06); }
-  82% { transform: translateY(0) scale(1.06, 0.93); }
-  90% { transform: translateY(0) scale(1, 1); }
-}
-@media (prefers-reduced-motion: reduce) { .sun-wob, .hop, .dial-cast .cs { animation: none; } .dial-cast .cs { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .sun-wob { animation: none; } }
