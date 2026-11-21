@@ -22,8 +22,8 @@ Status per eis: **Waargemaakt**, **Niet waargemaakt** of **Openstaand**.
 | Juridisch: licenties, AVG, cookies, privacy | Waargemaakt (concept) | `ASSETS-EN-LICENTIES.md`, `/privacy/` is concept |
 | Test desktop/tablet/mobiel, links, console, a11y, performance | Waargemaakt, zie README | `npm run check:site`, `check:a11y` |
 | Screenshots (desktop home, mobiele home, menukaart, contact) | Waargemaakt | `.gg/screenshots/` |
-| Niet live, geen bestaande site gewijzigd | Waargemaakt | Niets gepubliceerd of gepusht |
-| GitHub volgens WebRnds-afspraken | Openstaand | Nog geen repo gemaakt; wacht op jouw akkoord |
+| Voorbeeldsite online (noindex), bestaande site niet gewijzigd | Waargemaakt | GitHub Pages: https://jalvdbroek-ship-it.github.io/cafetaria-de-zon-v2/ |
+| GitHub volgens WebRnds-afspraken | Waargemaakt | Repo `jalvdbroek-ship-it/cafetaria-de-zon-v2` |
 
 ## Aannames die de eigenaar moet bevestigen
 
