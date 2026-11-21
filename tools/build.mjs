@@ -57,7 +57,7 @@ const blocks = {
   "hours-json": () => `<script type="application/json" id="hours-data">${JSON.stringify(site.hours)}</script>`,
 
   sprite: () => {
-    const ill = read("src/partials/illustraties.svg").trim();
+    const ill = read("src/partials/illustraties.svg").trim() + " " + (existsSync(join(root, "src/partials/cast.svg")) ? read("src/partials/cast.svg").trim() : "");
     const used = new Set();
     for (const f of ["src/pages", "src/partials"]) {
       for (const file of readdirSync(join(root, f))) {
